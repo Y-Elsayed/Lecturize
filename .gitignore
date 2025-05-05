@@ -1,0 +1,5 @@
+.venv/
+*__pycache__/
+input_videos/
+output/
+yolo11m-seg.pt
