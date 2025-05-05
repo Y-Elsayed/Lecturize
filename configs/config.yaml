@@ -1,0 +1,17 @@
+dataset:
+  path: /home/user/Documents/Code/YOLO_V8/image-segmentation-yolov8/data
+  train: images/train
+  val: images/val
+model:
+  confidence_threshold: 0.3
+  iou_threshold: 0.5
+  name: yolo11m-seg.pt
+  target_class: 0
+output:
+  annotated_video: output/annotated_output.mp4
+  cleaned_board_video: output/cleaned_board_output.mp4
+  polygon_image: output/selected_frame_with_dots_and_polygon.jpg
+  smartboard_video: output/smartboard_output.mp4
+video:
+  input_path: input_videos/lecture.mp4
+  output_dir: output
