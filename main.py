@@ -1,4 +1,4 @@
-from app.models.smartboard_model import SmartBoardModel
+from app.models.professor_detection_model import ProfessorDetectionModel
 from app.services.professor_masker import ProfessorMasker
 from app.services.whiteboard_transformer import WhiteboardTransformer
 from app.views.frame_selector import FrameSelector
@@ -25,7 +25,7 @@ def main():
     smart_board_model_path = config['output']['smartboard_video']
 
     # Step 3: Initialize core components
-    model = SmartBoardModel(config['model']['name'])
+    model = ProfessorDetectionModel(config['model']['name'])
     masker = ProfessorMasker(
         conf_threshold=config['model']['confidence_threshold'],
         iou_threshold=config['model']['iou_threshold'],
